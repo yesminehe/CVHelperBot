@@ -9,15 +9,16 @@ CV Helper Bot is a powerful and modular Discord bot designed to assist HR profes
 - **CV Review & Scoring:** Analyze and score CVs based on structure, content, and grammar.
 - **AI-Powered Feedback:** Summarize and provide actionable feedback using advanced language models.
 - **Contact Info Extraction:** Automatically extract email, phone, and LinkedIn from uploaded CVs.
-- **CV Comparison:** Compare two CVs to highlight differences, strengths, and unique skills.
-- **Grammar Checking:** Detect and penalize grammar and spelling mistakes.
+- **Format Checking:** Check if a CV follows best formatting practices (length, sections, bullet points, etc.).
+- **Job Match:** Compare a job description and a CV to see if they match.
 - **User-Friendly Commands:** Simple commands for HR and job seekers, including custom help.
 
 ## Commands
 
 - `!reviewcv` — Analyze and summarize a CV, provide feedback, and score it.
 - `!extractinfo` — Extract contact information (email, phone, LinkedIn) from a CV.
-- `!cvcompare` — Compare two CVs (PDFs) and highlight differences or strengths.
+- `!cvformatcheck` — Check if the CV follows best formatting practices (length, sections, bullet points, etc.).
+- `!cvmatch` — Compare a job description and a CV, and say if they match.
 - `!cvhelp` — List all available commands and what they do.
 
 ## Tech Stack
@@ -27,6 +28,7 @@ CV Helper Bot is a powerful and modular Discord bot designed to assist HR profes
 - pdfplumber
 - transformers (HuggingFace)
 - language-tool-python
+- matplotlib
 
 ## Getting Started
 
@@ -35,6 +37,12 @@ CV Helper Bot is a powerful and modular Discord bot designed to assist HR profes
 3. Add your Discord bot token to `config.py`.
 4. Run the bot: `python bot.py`
 5. Invite the bot to your Discord server and start using the commands!
+
+### Required Bot Permissions
+
+- Send Messages
+- Attach Files
+- Read Message History
 
 ---
 

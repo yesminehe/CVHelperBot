@@ -2,3 +2,5 @@ discord.py
 pdfplumber
 transformers
 torch
+language-tool-python
+matplotlib
