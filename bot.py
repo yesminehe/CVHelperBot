@@ -5,9 +5,9 @@ from config import DISCORD_TOKEN
 from commands.reviewcv import setup as setup_reviewcv
 from utils.scoring import score_cv
 from commands.extractinfo import setup as setup_extractinfo
-from commands.cvcompare import setup as setup_cvcompare
 from commands.help import setup as setup_help
-from commands.cvgrammar import setup as setup_cvgrammar
+from commands.cvformatcheck import setup as setup_cvformatcheck
+from commands.cvmatch import setup as setup_cvmatch
 
 import logging
 
@@ -24,8 +24,8 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 setup_reviewcv(bot)
 setup_extractinfo(bot)
-setup_cvcompare(bot)
 setup_help(bot)
-setup_cvgrammar(bot)
+setup_cvformatcheck(bot)
+setup_cvmatch(bot)
 
 bot.run(DISCORD_TOKEN)
