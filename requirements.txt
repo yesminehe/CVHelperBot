@@ -1,0 +1,4 @@
+discord.py
+pdfplumber
+transformers
+torch

@@ -1,0 +1,31 @@
+2025-07-17 21:04:52,047 INFO:discord.client: logging in using static token
+2025-07-17 21:04:57,125 INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 8f58f40cd72b05a0b694083e7225091a).
+2025-07-17 21:13:18,152 ERROR:root: An error occurred in reviewcv_error.
+Traceback (most recent call last):
+  File "C:\Users\yasmi\anaconda3\Lib\site-packages\discord\ext\commands\core.py", line 235, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\wamp64\www\cvhelperbot\commands\reviewcv.py", line 44, in reviewcv
+    await attachment.save(tmp.name)
+  File "C:\Users\yasmi\anaconda3\Lib\site-packages\discord\message.py", line 317, in save
+    with open(fp, 'wb') as f:
+         ^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\yasmi\\AppData\\Local\\Temp\\tmpt6zt6cge'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yasmi\anaconda3\Lib\site-packages\discord\ext\commands\bot.py", line 1366, in invoke
+    await ctx.command.invoke(ctx)
+  File "C:\Users\yasmi\anaconda3\Lib\site-packages\discord\ext\commands\core.py", line 1029, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasmi\anaconda3\Lib\site-packages\discord\ext\commands\core.py", line 244, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: PermissionError: [Errno 13] Permission denied: 'C:\\Users\\yasmi\\AppData\\Local\\Temp\\tmpt6zt6cge'
+2025-07-17 21:15:01,140 INFO:discord.client: logging in using static token
+2025-07-17 21:15:03,123 INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: 29ba5e4eb5a74128e4d9094ab00b1e2a).
+2025-07-17 21:15:17,001 ERROR:discord.ext.commands.bot: Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "reviexcv" is not found
+2025-07-17 21:25:30,264 INFO:discord.client: logging in using static token
+2025-07-17 21:25:31,932 INFO:discord.gateway: Shard ID None has connected to Gateway (Session ID: c991da1691caf4eee6a48dc2b9627cc9).
