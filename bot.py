@@ -7,6 +7,7 @@ from utils.scoring import score_cv
 from commands.extractinfo import setup as setup_extractinfo
 from commands.cvcompare import setup as setup_cvcompare
 from commands.help import setup as setup_help
+from commands.cvgrammar import setup as setup_cvgrammar
 
 import logging
 
@@ -25,5 +26,6 @@ setup_reviewcv(bot)
 setup_extractinfo(bot)
 setup_cvcompare(bot)
 setup_help(bot)
+setup_cvgrammar(bot)
 
 bot.run(DISCORD_TOKEN)
