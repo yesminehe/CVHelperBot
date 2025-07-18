@@ -8,6 +8,7 @@ from commands.extractinfo import setup as setup_extractinfo
 from commands.help import setup as setup_help
 from commands.cvformatcheck import setup as setup_cvformatcheck
 from commands.cvmatch import setup as setup_cvmatch
+from commands.interviewprep import setup as setup_interviewprep
 
 import logging
 
@@ -27,5 +28,5 @@ setup_extractinfo(bot)
 setup_help(bot)
 setup_cvformatcheck(bot)
 setup_cvmatch(bot)
-
+setup_interviewprep(bot)
 bot.run(DISCORD_TOKEN)

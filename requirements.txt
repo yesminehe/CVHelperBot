@@ -4,3 +4,5 @@ transformers
 torch
 language-tool-python
 matplotlib
+requests
+beautifulsoup4

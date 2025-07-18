@@ -10,7 +10,8 @@ CV Helper Bot is a powerful and modular Discord bot designed to assist HR profes
 - **AI-Powered Feedback:** Summarize and provide actionable feedback using advanced language models.
 - **Contact Info Extraction:** Automatically extract email, phone, and LinkedIn from uploaded CVs.
 - **Format Checking:** Check if a CV follows best formatting practices (length, sections, bullet points, etc.).
-- **Job Match:** Compare a job description and a CV to see if they match.
+- **Job Match (AI Skills Extraction):** Compare a job description (text or job board URL) and a CV to see if they match, using AI to extract and match real skills.
+- **Interview Preparation:** Generate likely interview questions from a job description (text or URL) and a CV, and quiz you interactively.
 - **User-Friendly Commands:** Simple commands for HR and job seekers, including custom help.
 
 ## Commands
@@ -18,7 +19,8 @@ CV Helper Bot is a powerful and modular Discord bot designed to assist HR profes
 - `!reviewcv` — Analyze and summarize a CV, provide feedback, and score it.
 - `!extractinfo` — Extract contact information (email, phone, LinkedIn) from a CV.
 - `!cvformatcheck` — Check if the CV follows best formatting practices (length, sections, bullet points, etc.).
-- `!cvmatch` — Compare a job description and a CV, and say if they match.
+- `!cvmatch` — Compare a job description (text or job board URL) and a CV, and say if they match, using AI to extract and match real skills.
+- `!interviewprep` — Generate likely interview questions from a job description (text or URL) and a CV, and quiz you interactively.
 - `!cvhelp` — List all available commands and what they do.
 
 ## Tech Stack
@@ -26,9 +28,12 @@ CV Helper Bot is a powerful and modular Discord bot designed to assist HR profes
 - Python 3
 - discord.py
 - pdfplumber
-- transformers (HuggingFace)
+- transformers (HuggingFace, TinyLlama)
+- torch
 - language-tool-python
 - matplotlib
+- requests
+- beautifulsoup4
 
 ## Getting Started
 
